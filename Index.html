@@ -1,239 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punjab & Its Regions | Dialects</title>
+    <title>Punjab Regions & Dialects</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
         body {
-            background: #0f172a;
-            color: #e2e8f0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #eee;
+            margin: 0;
+            padding: 20px;
             line-height: 1.6;
         }
-
-        header {
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            padding: 45px 20px;
+        h1 {
             text-align: center;
-            border-bottom: 4px solid #f97316;
-        }
-
-        header h1 {
-            font-size: 2.6rem;
-            color: #fff;
+            color: #f97316;
             margin-bottom: 10px;
         }
-
-        header p {
-            font-size: 1.15rem;
-            color: #94a3b8;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .intro {
+        .subtitle {
             text-align: center;
-            max-width: 850px;
-            margin: 0 auto 45px;
-            font-size: 1.1rem;
-            color: #cbd5e1;
+            color: #aaa;
+            margin-bottom: 40px;
         }
-
-        .regions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 22px;
+        .card {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
         }
-
-        .region-card {
-            background: #1e293b;
-            border-radius: 12px;
-            padding: 22px;
-            border: 1px solid #334155;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .region-card:hover {
-            transform: translateY(-6px);
-            border-color: #f97316;
-            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.2);
-        }
-
-        .region-card h2 {
+        .card h3 {
+            margin: 0 0 5px 0;
             color: #f97316;
-            font-size: 1.25rem;
-            margin-bottom: 8px;
         }
-
-        .region-card .dialect {
-            background: #0f172a;
-            display: inline-block;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.95rem;
-            color: #e2e8f0;
-            border: 1px solid #475569;
-        }
-
         footer {
-            background: #0f172a;
             text-align: center;
-            padding: 35px 20px;
-            margin-top: 60px;
-            border-top: 4px solid #f97316;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #f97316;
+            color: #aaa;
         }
-
-        footer p {
-            color: #94a3b8;
-            margin: 5px 0;
-            font-size: 1.05rem;
-        }
-
-        footer .name {
+        footer strong {
             color: #f97316;
-            font-weight: 700;
-            font-size: 1.25rem;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Punjab & Its Regions</h1>
-        <p>Major Regions of Punjab and Their Dialects</p>
-    </header>
+    <h1>Punjab & Its Regions</h1>
+    <p class="subtitle">Regions of Punjab with their Dialects</p>
 
-    <div class="container">
-        <p class="intro">
-            Punjab is a culturally rich land with diverse regions, each having its own unique dialect. 
-            Below is a list of important regions of historical Punjab along with their spoken dialects.
-        </p>
-
-        <div class="regions-grid">
-
-            <div class="region-card">
-                <h2>1. Majha</h2>
-                <div class="dialect">Majhi</div>
-            </div>
-
-            <div class="region-card">
-                <h2>2. Malwa</h2>
-                <div class="dialect">Malwai</div>
-            </div>
-
-            <div class="region-card">
-                <h2>3. Doaba</h2>
-                <div class="dialect">Doabi</div>
-            </div>
-
-            <div class="region-card">
-                <h2>4. Puadh</h2>
-                <div class="dialect">Puadhi</div>
-            </div>
-
-            <div class="region-card">
-                <h2>5. Bhattiana</h2>
-                <div class="dialect">Bhattiani</div>
-            </div>
-
-            <div class="region-card">
-                <h2>6. Rathia</h2>
-                <div class="dialect">Rathi</div>
-            </div>
-
-            <div class="region-card">
-                <h2>7. Sandal Bar</h2>
-                <div class="dialect">Jhangochi</div>
-            </div>
-
-            <div class="region-card">
-                <h2>8. Gondal Bar</h2>
-                <div class="dialect">Shahpuri</div>
-            </div>
-
-            <div class="region-card">
-                <h2>9. Kirana Bar</h2>
-                <div class="dialect">Shahpuri</div>
-            </div>
-
-            <div class="region-card">
-                <h2>10. Neeli Bar</h2>
-                <div class="dialect">Jatki - Saraiki Transition</div>
-            </div>
-
-            <div class="region-card">
-                <h2>11. Ganji Bar</h2>
-                <div class="dialect">Jhangochi</div>
-            </div>
-
-            <div class="region-card">
-                <h2>12. Multan</h2>
-                <div class="dialect">Multani</div>
-            </div>
-
-            <div class="region-card">
-                <h2>13. Bahawalpur</h2>
-                <div class="dialect">Riyasti</div>
-            </div>
-
-            <div class="region-card">
-                <h2>14. Derajat</h2>
-                <div class="dialect">Derawali</div>
-            </div>
-
-            <div class="region-card">
-                <h2>15. Hindkowan</h2>
-                <div class="dialect">Hindko</div>
-            </div>
-
-            <div class="region-card">
-                <h2>16. Durug</h2>
-                <div class="dialect">Khetrani</div>
-            </div>
-
-            <div class="region-card">
-                <h2>17. Pothohar</h2>
-                <div class="dialect">Pothohari</div>
-            </div>
-
-            <div class="region-card">
-                <h2>18. Dhanni</h2>
-                <div class="dialect">Dhanni</div>
-            </div>
-
-            <div class="region-card">
-                <h2>19. Thal</h2>
-                <div class="dialect">Thalochi</div>
-            </div>
-
-        </div>
-    </div>
+    <div class="card"><h3>1. Majha</h3>Dialect: Majhi</div>
+    <div class="card"><h3>2. Malwa</h3>Dialect: Malwai</div>
+    <div class="card"><h3>3. Doaba</h3>Dialect: Doabi</div>
+    <div class="card"><h3>4. Puadh</h3>Dialect: Puadhi</div>
+    <div class="card"><h3>5. Bhattiana</h3>Dialect: Bhattiani</div>
+    <div class="card"><h3>6. Rathia</h3>Dialect: Rathi</div>
+    <div class="card"><h3>7. Sandal Bar</h3>Dialect: Jhangochi</div>
+    <div class="card"><h3>8. Gondal Bar</h3>Dialect: Shahpuri</div>
+    <div class="card"><h3>9. Kirana Bar</h3>Dialect: Shahpuri</div>
+    <div class="card"><h3>10. Neeli Bar</h3>Dialect: Jatki - Saraiki Transition</div>
+    <div class="card"><h3>11. Ganji Bar</h3>Dialect: Jhangochi</div>
+    <div class="card"><h3>12. Multan</h3>Dialect: Multani</div>
+    <div class="card"><h3>13. Bahawalpur</h3>Dialect: Riyasti</div>
+    <div class="card"><h3>14. Derajat</h3>Dialect: Derawali</div>
+    <div class="card"><h3>15. Hindkowan</h3>Dialect: Hindko</div>
+    <div class="card"><h3>16. Durug</h3>Dialect: Khetrani</div>
+    <div class="card"><h3>17. Pothohar</h3>Dialect: Pothohari</div>
+    <div class="card"><h3>18. Dhanni</h3>Dialect: Dhanni</div>
+    <div class="card"><h3>19. Thal</h3>Dialect: Thalochi</div>
 
     <footer>
         <p>Developed by</p>
-        <p class="name">Harmanjot Singh</p>
+        <p><strong>Harmanjot Singh</strong></p>
         <p>BCA 5th Semester | Cloud Computing Lab</p>
-        <p style="margin-top: 12px; font-size: 0.9rem; color: #64748b;">
-            Static Website Hosted on GitHub Pages
-        </p>
     </footer>
 
 </body>
